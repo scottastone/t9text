@@ -6,5 +6,5 @@ if [[ "$VIRTUAL_ENV" == "" ]]; then
 fi
 
 # Build the project and then remove the build folder
-pyinstaller --  onefile t9text.py
+pyinstaller --onefile t9text.py
 rm -rf build
