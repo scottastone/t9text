@@ -37,15 +37,14 @@ def main():
     """
     Main function to run the T9 converter loop.
     """
-    print("Enter your text below. Type 'q' or 'quit' to exit.")
+    print("Enter your text below. Type '--q' to exit.")
     
     while True:
         # Get input from the user
         user_input = input("\n>>> ")
         
         # Check for quit condition
-        if user_input.lower() in ('q', 'quit'):
-            print("Goodbye!")
+        if user_input.lower() == '--q':
             break
             
         # Convert the text and print the result
